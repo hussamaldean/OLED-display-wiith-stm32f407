@@ -33,7 +33,7 @@ GPIOB->OTYPER|=GPIO_OTYPER_OT8|GPIO_OTYPER_OT9; //set pb8 and pb9 as open drain
 I2C1->CR1=I2C_CR1_SWRST;
 I2C1->CR1&=~I2C_CR1_SWRST;	
 I2C1->CR2|=16;
-I2C1->CCR=80; 
+I2C1->CCR|=0x01|(1<<15)|(1<<14); ; 
 I2C1->TRISE=17; //output max rise 
 I2C1->CR1|=I2C_CR1_PE;
 }
