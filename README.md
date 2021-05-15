@@ -5,8 +5,8 @@
  The utilitiezed mcu is stm32f407vetx and the code is developed using keil uvision software 
  The code uses bare metal method ( direct register manipulation ) to drive the oled display 
  The setting for the mcu was as following
- core speed =18MHz
- i2c speed = 100KHz
+ core speed =16MHz
+ i2c speed = 1MHz
  
 
  
